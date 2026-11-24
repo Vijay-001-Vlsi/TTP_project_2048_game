@@ -1,0 +1,748 @@
+Command: /fetools/work_area/frontend/Batch_11/vijay/TTO_2048/./simv -cm line+cond+fsm+tgl+branch+assert -cm_dir regression_cm/runs/game_merge_rules_test_run1/simv.vdb +UVM_TESTNAME=game_merge_rules_test +UVM_VERBOSITY=UVM_LOW +UVM_TIMEOUT=500000000000 -l regression_cm/runs/game_merge_rules_test_run1/game_merge_rules_test_run1.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 23 21:06 2026
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test game_merge_rules_test...
+UVM_INFO @ 0: reporter [TIMOUTSET] '+UVM_TIMEOUT=500000000000' provided on the command line is being applied.
+UVM_INFO scoreboard.sv(113) @ 0: uvm_test_top.envh.scrh [SCB_CFG] BUILD_V4_SIMPLE empty_dot_lo=30
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(589) @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------------------
+Name                                  Type                        Size  Value
+-----------------------------------------------------------------------------
+uvm_test_top                          game_merge_rules_test       -     @350 
+  envh                                environment                 -     @365 
+    aa                                active_agent                -     @379 
+      active_agent_analysis_port      uvm_analysis_port           -     @388 
+      drvh                            driver                      -     @584 
+        rsp_port                      uvm_analysis_port           -     @603 
+        seq_item_port                 uvm_seq_item_pull_port      -     @593 
+      monh                            game2048_inp_monitor        -     @565 
+        input_monitor_analysis_port   uvm_analysis_port           -     @574 
+      seqrh                           sequencer                   -     @613 
+        rsp_export                    uvm_analysis_export         -     @622 
+        seq_item_export               uvm_seq_item_pull_imp       -     @740 
+        arbitration_queue             array                       0     -    
+        lock_queue                    array                       0     -    
+        num_last_reqs                 integral                    32    'd1  
+        num_last_rsps                 integral                    32    'd1  
+    input_cov                         game2048_subscriber         -     @417 
+      analysis_imp                    uvm_analysis_imp            -     @426 
+    pa                                passive_agent               -     @398 
+      monh                            game2048_out_monitor        -     @759 
+        output_monitor_analysis_port  uvm_analysis_port           -     @768 
+      passive_agent_analysis_port     uvm_analysis_port           -     @407 
+    scrh                              scoreboard                  -     @436 
+      fifo_in                         uvm_tlm_analysis_fifo #(T)  -     @445 
+        analysis_export               uvm_analysis_imp            -     @494 
+        get_ap                        uvm_analysis_port           -     @484 
+        get_peek_export               uvm_get_peek_imp            -     @464 
+        put_ap                        uvm_analysis_port           -     @474 
+        put_export                    uvm_put_imp                 -     @454 
+      fifo_op                         uvm_tlm_analysis_fifo #(T)  -     @504 
+        analysis_export               uvm_analysis_imp            -     @553 
+        get_ap                        uvm_analysis_port           -     @543 
+        get_peek_export               uvm_get_peek_imp            -     @523 
+        put_ap                        uvm_analysis_port           -     @533 
+        put_export                    uvm_put_imp                 -     @513 
+-----------------------------------------------------------------------------
+
+UVM_INFO sequence.sv(187) @ 0: uvm_test_top.envh.aa.seqrh@@seqh [SEQ] === [5/11] Starting game_merge_rules_seq ===
+UVM_INFO input_monitor.sv(33) @ 60000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 60000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 0 VSYNC | non-zero RGB clocks=0 | last uo_out=0x0, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 15571362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 1 VSYNC | non-zero RGB clocks=65536 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 15571362000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x10, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 15571401000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x10, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 32254602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 2 VSYNC | non-zero RGB clocks=65536 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 48937842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 3 VSYNC | non-zero RGB clocks=65536 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 65621082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 4 VSYNC | non-zero RGB clocks=65352 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 65621121000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 82304322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 5 VSYNC | non-zero RGB clocks=65352 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 98987562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 6 VSYNC | non-zero RGB clocks=65352 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 115670802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 7 VSYNC | non-zero RGB clocks=65352 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 132354042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 8 VSYNC | non-zero RGB clocks=65352 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 132354042000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 132354081000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 149037282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 9 VSYNC | non-zero RGB clocks=65352 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 165720522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 10 VSYNC | non-zero RGB clocks=65352 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 182403762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 11 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 182403801000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 199087002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 12 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 215770242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 13 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 232453482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 14 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 249136722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 15 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 249136722000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 249136761000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 265819962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 16 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 282503202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 17 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 299186442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 18 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 299186481000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 315869682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 19 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 332552922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 20 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 349236162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 21 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 365919402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 22 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 365919402000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 365919441000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 382602642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 23 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 399285882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 24 VSYNC | non-zero RGB clocks=65112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 415969122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 25 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 415969161000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 432652362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 26 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 449335602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 27 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 466018842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 28 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 482702082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 29 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 482702082000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 482702121000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 499385322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 30 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 516068562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 31 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 532751802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 32 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 532751841000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 549435042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 33 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 566118282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 34 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 582801522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 35 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 599484762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 36 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 599484762000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 599484801000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 616168002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 37 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 632851242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 38 VSYNC | non-zero RGB clocks=64872 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 649534482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 39 VSYNC | non-zero RGB clocks=64928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 649534521000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 666217722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 40 VSYNC | non-zero RGB clocks=64928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 682900962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 41 VSYNC | non-zero RGB clocks=64928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 699584202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 42 VSYNC | non-zero RGB clocks=64928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 716267442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 43 VSYNC | non-zero RGB clocks=64928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 716267442000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 716267481000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 732950682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 44 VSYNC | non-zero RGB clocks=64928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 749633922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 45 VSYNC | non-zero RGB clocks=64928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 766317162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 46 VSYNC | non-zero RGB clocks=64768 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 766317201000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 783000402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 47 VSYNC | non-zero RGB clocks=64768 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 799683642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 48 VSYNC | non-zero RGB clocks=64768 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 816366882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 49 VSYNC | non-zero RGB clocks=64768 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 833050122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 50 VSYNC | non-zero RGB clocks=64768 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 833050122000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 833050161000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 849733362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 51 VSYNC | non-zero RGB clocks=64768 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 866416602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 52 VSYNC | non-zero RGB clocks=64768 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 883099842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 53 VSYNC | non-zero RGB clocks=64528 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 883099881000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 899783082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 54 VSYNC | non-zero RGB clocks=64528 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 916466322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 55 VSYNC | non-zero RGB clocks=64528 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 933149562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 56 VSYNC | non-zero RGB clocks=64528 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 949832802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 57 VSYNC | non-zero RGB clocks=64528 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 949832802000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 949832841000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 966516042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 58 VSYNC | non-zero RGB clocks=64528 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 983199282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 59 VSYNC | non-zero RGB clocks=64528 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 999882522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 60 VSYNC | non-zero RGB clocks=64288 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 999882561000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1016565762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 61 VSYNC | non-zero RGB clocks=64288 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1033249002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 62 VSYNC | non-zero RGB clocks=64288 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1049932242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 63 VSYNC | non-zero RGB clocks=64288 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1066615482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 64 VSYNC | non-zero RGB clocks=64288 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 1066615482000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 1066615521000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1083298722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 65 VSYNC | non-zero RGB clocks=64288 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1099981962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 66 VSYNC | non-zero RGB clocks=64288 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1116665202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 67 VSYNC | non-zero RGB clocks=64344 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 1116665241000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1133348442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 68 VSYNC | non-zero RGB clocks=64344 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1150031682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 69 VSYNC | non-zero RGB clocks=64344 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1166714922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 70 VSYNC | non-zero RGB clocks=64344 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1183398162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 71 VSYNC | non-zero RGB clocks=64344 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 1183398162000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 1183398201000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1200081402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 72 VSYNC | non-zero RGB clocks=64344 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1216764642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 73 VSYNC | non-zero RGB clocks=64344 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1233447882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 74 VSYNC | non-zero RGB clocks=64104 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 1233447921000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1250131122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 75 VSYNC | non-zero RGB clocks=64104 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1266814362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 76 VSYNC | non-zero RGB clocks=64104 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1283497602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 77 VSYNC | non-zero RGB clocks=64104 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1300180842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 78 VSYNC | non-zero RGB clocks=64104 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 1300180842000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 1300180881000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1316864082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 79 VSYNC | non-zero RGB clocks=64104 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1333547322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 80 VSYNC | non-zero RGB clocks=64104 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1350230562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 81 VSYNC | non-zero RGB clocks=64160 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 1350230601000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1366913802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 82 VSYNC | non-zero RGB clocks=64160 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1383597042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 83 VSYNC | non-zero RGB clocks=64160 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1400280282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 84 VSYNC | non-zero RGB clocks=64160 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1416963522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 85 VSYNC | non-zero RGB clocks=64160 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 1416963522000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 1416963561000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1433646762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 86 VSYNC | non-zero RGB clocks=64160 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1450330002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 87 VSYNC | non-zero RGB clocks=64160 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1467013242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 88 VSYNC | non-zero RGB clocks=64216 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 1467013281000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1483696482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 89 VSYNC | non-zero RGB clocks=64216 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1500379722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 90 VSYNC | non-zero RGB clocks=64216 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1517062962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 91 VSYNC | non-zero RGB clocks=64216 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1533746202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 92 VSYNC | non-zero RGB clocks=64216 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 1533746202000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 1533746241000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1550429442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 93 VSYNC | non-zero RGB clocks=64216 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1567112682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 94 VSYNC | non-zero RGB clocks=64216 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1583795922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 95 VSYNC | non-zero RGB clocks=64056 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 1583795961000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1600479162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 96 VSYNC | non-zero RGB clocks=64056 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1617162402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 97 VSYNC | non-zero RGB clocks=64056 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1633845642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 98 VSYNC | non-zero RGB clocks=64056 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1650528882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 99 VSYNC | non-zero RGB clocks=64056 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 1650528882000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 1650528921000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1667212122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 100 VSYNC | non-zero RGB clocks=64056 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1683895362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 101 VSYNC | non-zero RGB clocks=64056 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1700578602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 102 VSYNC | non-zero RGB clocks=64112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 1700578641000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1717261842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 103 VSYNC | non-zero RGB clocks=64112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1733945082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 104 VSYNC | non-zero RGB clocks=64112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1750628322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 105 VSYNC | non-zero RGB clocks=64112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1767311562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 106 VSYNC | non-zero RGB clocks=64112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 1767311562000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 1767311601000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1783994802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 107 VSYNC | non-zero RGB clocks=64112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1800678042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 108 VSYNC | non-zero RGB clocks=64112 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1817361282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 109 VSYNC | non-zero RGB clocks=63952 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 1817361321000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1834044522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 110 VSYNC | non-zero RGB clocks=63952 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1850727762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 111 VSYNC | non-zero RGB clocks=63952 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1867411002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 112 VSYNC | non-zero RGB clocks=63952 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1884094242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 113 VSYNC | non-zero RGB clocks=63952 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 1884094242000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 1884094281000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1900777482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 114 VSYNC | non-zero RGB clocks=63952 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1917460722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 115 VSYNC | non-zero RGB clocks=63952 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1934143962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 116 VSYNC | non-zero RGB clocks=63944 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 1934144001000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 1950827202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 117 VSYNC | non-zero RGB clocks=63944 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1967510442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 118 VSYNC | non-zero RGB clocks=63944 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 1984193682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 119 VSYNC | non-zero RGB clocks=63944 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2000876922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 120 VSYNC | non-zero RGB clocks=63944 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 2000876922000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 2000876961000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2017560162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 121 VSYNC | non-zero RGB clocks=63944 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2034243402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 122 VSYNC | non-zero RGB clocks=63944 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2050926642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 123 VSYNC | non-zero RGB clocks=64000 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 2050926681000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2067609882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 124 VSYNC | non-zero RGB clocks=64000 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2084293122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 125 VSYNC | non-zero RGB clocks=64000 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2100976362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 126 VSYNC | non-zero RGB clocks=64000 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2117659602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 127 VSYNC | non-zero RGB clocks=64000 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 2117659602000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 2117659641000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2134342842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 128 VSYNC | non-zero RGB clocks=64000 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2151026082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 129 VSYNC | non-zero RGB clocks=64000 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2167709322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 130 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 2167709361000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2184392562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 131 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2201075802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 132 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2217759042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 133 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2234442282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 134 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 2234442282000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 2234442321000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2251125522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 135 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2267808762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 136 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2284492002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 137 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 2284492041000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2301175242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 138 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2317858482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 139 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2334541722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 140 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2351224962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 141 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 2351224962000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 2351225001000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2367908202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 142 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2384591442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 143 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2401274682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 144 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 2401274721000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2417957922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 145 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2434641162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 146 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2451324402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 147 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2468007642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 148 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 2468007642000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 2468007681000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2484690882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 149 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2501374122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 150 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2518057362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 151 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 2518057401000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2534740602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 152 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2551423842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 153 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2568107082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 154 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2584790322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 155 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 2584790322000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 2584790361000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2601473562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 156 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2618156802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 157 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2634840042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 158 VSYNC | non-zero RGB clocks=63336 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 2634840081000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2651523282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 159 VSYNC | non-zero RGB clocks=63336 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2668206522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 160 VSYNC | non-zero RGB clocks=63336 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2684889762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 161 VSYNC | non-zero RGB clocks=63336 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2701573002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 162 VSYNC | non-zero RGB clocks=63336 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 2701573002000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 2701573041000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2718256242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 163 VSYNC | non-zero RGB clocks=63336 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2734939482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 164 VSYNC | non-zero RGB clocks=63336 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2751622722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 165 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 2751622761000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2768305962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 166 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2784989202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 167 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2801672442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 168 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2818355682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 169 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 2818355682000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 2818355721000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2835038922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 170 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2851722162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 171 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2868405402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 172 VSYNC | non-zero RGB clocks=63448 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 2868405441000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2885088642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 173 VSYNC | non-zero RGB clocks=63448 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2901771882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 174 VSYNC | non-zero RGB clocks=63448 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2918455122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 175 VSYNC | non-zero RGB clocks=63448 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2935138362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 176 VSYNC | non-zero RGB clocks=63448 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 2935138362000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 2935138401000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 2951821602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 177 VSYNC | non-zero RGB clocks=63448 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2968504842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 178 VSYNC | non-zero RGB clocks=63448 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 2985188082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 179 VSYNC | non-zero RGB clocks=63664 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 2985188121000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3001871322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 180 VSYNC | non-zero RGB clocks=63664 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3018554562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 181 VSYNC | non-zero RGB clocks=63664 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3035237802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 182 VSYNC | non-zero RGB clocks=63664 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3051921042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 183 VSYNC | non-zero RGB clocks=63664 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 3051921042000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 3051921081000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3068604282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 184 VSYNC | non-zero RGB clocks=63664 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3085287522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 185 VSYNC | non-zero RGB clocks=63664 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3101970762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 186 VSYNC | non-zero RGB clocks=63424 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 3101970801000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3118654002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 187 VSYNC | non-zero RGB clocks=63424 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3135337242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 188 VSYNC | non-zero RGB clocks=63424 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3152020482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 189 VSYNC | non-zero RGB clocks=63424 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3168703722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 190 VSYNC | non-zero RGB clocks=63424 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 3168703722000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 3168703761000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3185386962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 191 VSYNC | non-zero RGB clocks=63424 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3202070202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 192 VSYNC | non-zero RGB clocks=63424 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3218753442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 193 VSYNC | non-zero RGB clocks=63416 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 3218753481000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3235436682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 194 VSYNC | non-zero RGB clocks=63416 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3252119922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 195 VSYNC | non-zero RGB clocks=63416 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3268803162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 196 VSYNC | non-zero RGB clocks=63416 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3285486402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 197 VSYNC | non-zero RGB clocks=63416 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 3285486402000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 3285486441000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3302169642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 198 VSYNC | non-zero RGB clocks=63416 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3318852882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 199 VSYNC | non-zero RGB clocks=63416 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3335536122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 200 VSYNC | non-zero RGB clocks=63472 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 3335536161000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3352219362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 201 VSYNC | non-zero RGB clocks=63472 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3368902602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 202 VSYNC | non-zero RGB clocks=63472 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3385585842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 203 VSYNC | non-zero RGB clocks=63472 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3402269082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 204 VSYNC | non-zero RGB clocks=63472 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 3402269082000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 3402269121000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3418952322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 205 VSYNC | non-zero RGB clocks=63472 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3435635562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 206 VSYNC | non-zero RGB clocks=63472 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3452318802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 207 VSYNC | non-zero RGB clocks=63232 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 3452318841000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3469002042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 208 VSYNC | non-zero RGB clocks=63232 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3485685282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 209 VSYNC | non-zero RGB clocks=63232 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3502368522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 210 VSYNC | non-zero RGB clocks=63232 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3519051762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 211 VSYNC | non-zero RGB clocks=63232 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 3519051762000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 3519051801000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3535735002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 212 VSYNC | non-zero RGB clocks=63232 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3552418242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 213 VSYNC | non-zero RGB clocks=63232 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3569101482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 214 VSYNC | non-zero RGB clocks=62992 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 3569101521000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3585784722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 215 VSYNC | non-zero RGB clocks=62992 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3602467962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 216 VSYNC | non-zero RGB clocks=62992 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3619151202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 217 VSYNC | non-zero RGB clocks=62992 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3635834442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 218 VSYNC | non-zero RGB clocks=62992 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 3635834442000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 3635834481000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3652517682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 219 VSYNC | non-zero RGB clocks=62992 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3669200922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 220 VSYNC | non-zero RGB clocks=62992 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3685884162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 221 VSYNC | non-zero RGB clocks=62752 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 3685884201000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3702567402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 222 VSYNC | non-zero RGB clocks=62752 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3719250642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 223 VSYNC | non-zero RGB clocks=62752 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3735933882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 224 VSYNC | non-zero RGB clocks=62752 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3752617122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 225 VSYNC | non-zero RGB clocks=62752 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 3752617122000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 3752617161000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3769300362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 226 VSYNC | non-zero RGB clocks=62752 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3785983602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 227 VSYNC | non-zero RGB clocks=62752 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3802666842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 228 VSYNC | non-zero RGB clocks=62808 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 3802666881000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3819350082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 229 VSYNC | non-zero RGB clocks=62808 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3836033322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 230 VSYNC | non-zero RGB clocks=62808 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3852716562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 231 VSYNC | non-zero RGB clocks=62808 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3869399802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 232 VSYNC | non-zero RGB clocks=62808 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 3869399802000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 3869399841000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3886083042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 233 VSYNC | non-zero RGB clocks=62808 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3902766282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 234 VSYNC | non-zero RGB clocks=62808 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3919449522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 235 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 3919449561000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 3936132762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 236 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3952816002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 237 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3969499242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 238 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 3986182482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 239 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 3986182482000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 3986182521000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4002865722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 240 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4019548962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 241 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4036232202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 242 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 4036232241000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4052915442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 243 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4069598682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 244 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4086281922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 245 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4102965162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 246 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 4102965162000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 4102965201000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4119648402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 247 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4136331642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 248 VSYNC | non-zero RGB clocks=63248 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4153014882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 249 VSYNC | non-zero RGB clocks=63304 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 4153014921000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4169698122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 250 VSYNC | non-zero RGB clocks=63304 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4186381362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 251 VSYNC | non-zero RGB clocks=63304 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4203064602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 252 VSYNC | non-zero RGB clocks=63304 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4219747842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 253 VSYNC | non-zero RGB clocks=63304 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 4219747842000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 4219747881000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4236431082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 254 VSYNC | non-zero RGB clocks=63304 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4253114322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 255 VSYNC | non-zero RGB clocks=63304 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4269797562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 256 VSYNC | non-zero RGB clocks=63440 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 4269797601000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4286480802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 257 VSYNC | non-zero RGB clocks=63440 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4303164042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 258 VSYNC | non-zero RGB clocks=63440 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4319847282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 259 VSYNC | non-zero RGB clocks=63440 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4336530522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 260 VSYNC | non-zero RGB clocks=63440 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 4336530522000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 4336530561000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4353213762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 261 VSYNC | non-zero RGB clocks=63440 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4369897002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 262 VSYNC | non-zero RGB clocks=63440 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4386580242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 263 VSYNC | non-zero RGB clocks=63512 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 4386580281000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4403263482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 264 VSYNC | non-zero RGB clocks=63512 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4419946722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 265 VSYNC | non-zero RGB clocks=63512 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4436629962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 266 VSYNC | non-zero RGB clocks=63512 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4453313202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 267 VSYNC | non-zero RGB clocks=63512 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 4453313202000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 4453313241000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4469996442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 268 VSYNC | non-zero RGB clocks=63512 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4486679682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 269 VSYNC | non-zero RGB clocks=63512 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4503362922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 270 VSYNC | non-zero RGB clocks=63504 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 4503362961000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4520046162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 271 VSYNC | non-zero RGB clocks=63504 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4536729402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 272 VSYNC | non-zero RGB clocks=63504 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4553412642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 273 VSYNC | non-zero RGB clocks=63504 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4570095882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 274 VSYNC | non-zero RGB clocks=63504 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 4570095882000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 4570095921000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4586779122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 275 VSYNC | non-zero RGB clocks=63504 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4603462362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 276 VSYNC | non-zero RGB clocks=63504 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4620145602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 277 VSYNC | non-zero RGB clocks=63560 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 4620145641000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4636828842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 278 VSYNC | non-zero RGB clocks=63560 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4653512082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 279 VSYNC | non-zero RGB clocks=63560 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4670195322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 280 VSYNC | non-zero RGB clocks=63560 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4686878562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 281 VSYNC | non-zero RGB clocks=63560 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 4686878562000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 4686878601000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4703561802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 282 VSYNC | non-zero RGB clocks=63560 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4720245042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 283 VSYNC | non-zero RGB clocks=63560 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4736928282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 284 VSYNC | non-zero RGB clocks=63616 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 4736928321000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4753611522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 285 VSYNC | non-zero RGB clocks=63616 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4770294762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 286 VSYNC | non-zero RGB clocks=63616 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4786978002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 287 VSYNC | non-zero RGB clocks=63616 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4803661242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 288 VSYNC | non-zero RGB clocks=63616 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 4803661242000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 4803661281000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4820344482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 289 VSYNC | non-zero RGB clocks=63616 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4837027722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 290 VSYNC | non-zero RGB clocks=63616 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4853710962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 291 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 4853711001000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4870394202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 292 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4887077442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 293 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4903760682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 294 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4920443922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 295 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 4920443922000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 4920443961000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4937127162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 296 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4953810402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 297 VSYNC | non-zero RGB clocks=63760 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 4970493642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 298 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 4970493681000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 4987176882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 299 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5003860122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 300 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5020543362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 301 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5037226602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 302 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 5037226602000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 5037226641000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5053909842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 303 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5070593082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 304 VSYNC | non-zero RGB clocks=63816 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5087276322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 305 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 5087276361000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5103959562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 306 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5120642802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 307 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5137326042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 308 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5154009282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 309 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 5154009282000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 5154009321000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5170692522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 310 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5187375762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 311 VSYNC | non-zero RGB clocks=63576 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5204059002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 312 VSYNC | non-zero RGB clocks=63632 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 5204059041000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5220742242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 313 VSYNC | non-zero RGB clocks=63632 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5237425482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 314 VSYNC | non-zero RGB clocks=63632 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5254108722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 315 VSYNC | non-zero RGB clocks=63632 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5270791962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 316 VSYNC | non-zero RGB clocks=63632 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 5270791962000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 5270792001000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5287475202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 317 VSYNC | non-zero RGB clocks=63632 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5304158442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 318 VSYNC | non-zero RGB clocks=63632 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5320841682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 319 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 5320841721000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5337524922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 320 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5354208162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 321 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5370891402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 322 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5387574642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 323 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 5387574642000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 5387574681000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5404257882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 324 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5420941122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 325 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5437624362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 326 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 5437624401000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5454307602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 327 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5470990842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 328 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5487674082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 329 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5504357322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 330 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 5504357322000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 5504357361000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5521040562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 331 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5537723802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 332 VSYNC | non-zero RGB clocks=63392 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5554407042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 333 VSYNC | non-zero RGB clocks=63152 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 5554407081000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5571090282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 334 VSYNC | non-zero RGB clocks=63152 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5587773522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 335 VSYNC | non-zero RGB clocks=63152 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5604456762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 336 VSYNC | non-zero RGB clocks=63152 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5621140002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 337 VSYNC | non-zero RGB clocks=63152 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 5621140002000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 5621140041000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5637823242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 338 VSYNC | non-zero RGB clocks=63152 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5654506482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 339 VSYNC | non-zero RGB clocks=63152 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5671189722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 340 VSYNC | non-zero RGB clocks=63208 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 5671189761000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5687872962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 341 VSYNC | non-zero RGB clocks=63208 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5704556202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 342 VSYNC | non-zero RGB clocks=63208 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5721239442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 343 VSYNC | non-zero RGB clocks=63208 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5737922682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 344 VSYNC | non-zero RGB clocks=63208 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 5737922682000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 5737922721000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5754605922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 345 VSYNC | non-zero RGB clocks=63208 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5771289162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 346 VSYNC | non-zero RGB clocks=63208 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5787972402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 347 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 5787972441000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5804655642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 348 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5821338882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 349 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5838022122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 350 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5854705362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 351 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 5854705362000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 5854705401000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5871388602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 352 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5888071842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 353 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5904755082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 354 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 5904755121000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5921438322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 355 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5938121562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 356 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5954804802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 357 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 5971488042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 358 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 5971488042000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 5971488081000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 5988171282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 359 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6004854522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 360 VSYNC | non-zero RGB clocks=63048 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6021537762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 361 VSYNC | non-zero RGB clocks=63464 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 6021537801000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6038221002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 362 VSYNC | non-zero RGB clocks=63464 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6054904242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 363 VSYNC | non-zero RGB clocks=63464 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6071587482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 364 VSYNC | non-zero RGB clocks=63464 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6088270722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 365 VSYNC | non-zero RGB clocks=63464 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 6088270722000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 6088270761000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6104953962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 366 VSYNC | non-zero RGB clocks=63464 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6121637202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 367 VSYNC | non-zero RGB clocks=63464 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6138320442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 368 VSYNC | non-zero RGB clocks=63520 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 6138320481000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6155003682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 369 VSYNC | non-zero RGB clocks=63520 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6171686922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 370 VSYNC | non-zero RGB clocks=63520 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6188370162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 371 VSYNC | non-zero RGB clocks=63520 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6205053402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 372 VSYNC | non-zero RGB clocks=63520 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 6205053402000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 6205053441000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6221736642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 373 VSYNC | non-zero RGB clocks=63520 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6238419882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 374 VSYNC | non-zero RGB clocks=63520 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6255103122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 375 VSYNC | non-zero RGB clocks=63360 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 6255103161000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6271786362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 376 VSYNC | non-zero RGB clocks=63360 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6288469602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 377 VSYNC | non-zero RGB clocks=63360 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6305152842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 378 VSYNC | non-zero RGB clocks=63360 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6321836082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 379 VSYNC | non-zero RGB clocks=63360 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 6321836082000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 6321836121000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6338519322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 380 VSYNC | non-zero RGB clocks=63360 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6355202562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 381 VSYNC | non-zero RGB clocks=63360 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6371885802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 382 VSYNC | non-zero RGB clocks=63648 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 6371885841000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6388569042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 383 VSYNC | non-zero RGB clocks=63648 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6405252282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 384 VSYNC | non-zero RGB clocks=63648 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6421935522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 385 VSYNC | non-zero RGB clocks=63648 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6438618762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 386 VSYNC | non-zero RGB clocks=63648 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 6438618762000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 6438618801000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6455302002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 387 VSYNC | non-zero RGB clocks=63648 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6471985242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 388 VSYNC | non-zero RGB clocks=63648 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6488668482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 389 VSYNC | non-zero RGB clocks=63408 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 6488668521000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6505351722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 390 VSYNC | non-zero RGB clocks=63408 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6522034962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 391 VSYNC | non-zero RGB clocks=63408 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6538718202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 392 VSYNC | non-zero RGB clocks=63408 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6555401442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 393 VSYNC | non-zero RGB clocks=63408 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 6555401442000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 6555401481000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x4, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6572084682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 394 VSYNC | non-zero RGB clocks=63408 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6588767922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 395 VSYNC | non-zero RGB clocks=63408 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6605451162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 396 VSYNC | non-zero RGB clocks=63168 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 6605451201000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6622134402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 397 VSYNC | non-zero RGB clocks=63168 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6638817642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 398 VSYNC | non-zero RGB clocks=63168 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6655500882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 399 VSYNC | non-zero RGB clocks=63168 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6672184122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 400 VSYNC | non-zero RGB clocks=63168 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 6672184122000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 6672184161000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6688867362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 401 VSYNC | non-zero RGB clocks=63168 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6705550602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 402 VSYNC | non-zero RGB clocks=63168 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6722233842000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 403 VSYNC | non-zero RGB clocks=62928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 6722233881000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6738917082000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 404 VSYNC | non-zero RGB clocks=62928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6755600322000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 405 VSYNC | non-zero RGB clocks=62928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6772283562000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 406 VSYNC | non-zero RGB clocks=62928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6788966802000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 407 VSYNC | non-zero RGB clocks=62928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 6788966802000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 6788966841000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x1, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6805650042000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 408 VSYNC | non-zero RGB clocks=62928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6822333282000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 409 VSYNC | non-zero RGB clocks=62928 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6839016522000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 410 VSYNC | non-zero RGB clocks=62688 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 6839016561000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6855699762000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 411 VSYNC | non-zero RGB clocks=62688 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6872383002000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 412 VSYNC | non-zero RGB clocks=62688 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6889066242000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 413 VSYNC | non-zero RGB clocks=62688 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6905749482000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 414 VSYNC | non-zero RGB clocks=62688 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 6905749482000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 6905749521000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x8, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6922432722000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 415 VSYNC | non-zero RGB clocks=62688 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6939115962000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 416 VSYNC | non-zero RGB clocks=62688 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6955799202000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 417 VSYNC | non-zero RGB clocks=63040 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 6955799241000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 6972482442000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 418 VSYNC | non-zero RGB clocks=63040 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 6989165682000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 419 VSYNC | non-zero RGB clocks=63040 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 7005848922000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 420 VSYNC | non-zero RGB clocks=63040 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 7022532162000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 421 VSYNC | non-zero RGB clocks=63040 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO driver.sv(39) @ 7022532162000: uvm_test_top.envh.aa.drvh [driver] Driven transaction: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO input_monitor.sv(33) @ 7022532201000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x2, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 7039215402000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 422 VSYNC | non-zero RGB clocks=63040 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 7055898642000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 423 VSYNC | non-zero RGB clocks=63040 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 7072581882000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 424 VSYNC | non-zero RGB clocks=62800 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO input_monitor.sv(33) @ 7072581921000: uvm_test_top.envh.aa.monh [game2048_inp_monitor] Input changed: ui_in=0x0, uio_in=0x0, ena=1
+UVM_INFO output_monitor.sv(44) @ 7089265122000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 425 VSYNC | non-zero RGB clocks=62800 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 7105948362000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 426 VSYNC | non-zero RGB clocks=62800 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO output_monitor.sv(44) @ 7122631602000: uvm_test_top.envh.pa.monh [game2048_out_monitor] Frame 427 VSYNC | non-zero RGB clocks=62800 | last uo_out=0x80, uio_out=0x0, uio_oe=0x0
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 7122631702000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO scoreboard.sv(632) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY] ====================================================
+UVM_INFO scoreboard.sv(633) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Complete frames       : 426
+UVM_INFO scoreboard.sv(634) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Hard / soft resets    : 0 / 1
+UVM_INFO scoreboard.sv(635) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Moves valid / invalid : 54 / 6 (blocked 0)
+UVM_INFO scoreboard.sv(637) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Wins / losses seen    : 0 / 0
+UVM_INFO scoreboard.sv(638) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Spawns 2 / 4          : 54 / 1
+UVM_INFO scoreboard.sv(640) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Spawn count row 0    : 5 3 2 9
+UVM_INFO scoreboard.sv(640) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Spawn count row 1    : 2 2 6 4
+UVM_INFO scoreboard.sv(640) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Spawn count row 2    : 1 4 0 5
+UVM_INFO scoreboard.sv(640) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Spawn count row 3    : 3 3 5 1
+UVM_INFO scoreboard.sv(643) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Pixels matched / failed: 178920003 / 0
+UVM_INFO scoreboard.sv(644) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Cell / spawn errors   : 0
+UVM_INFO scoreboard.sv(645) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]  Final model grid (exponents):
+UVM_INFO scoreboard.sv(647) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]    Row 0: [  1  0  0  1 ]
+UVM_INFO scoreboard.sv(647) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]    Row 1: [  0  2  0  2 ]
+UVM_INFO scoreboard.sv(647) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]    Row 2: [  0  3  4  6 ]
+UVM_INFO scoreboard.sv(647) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY]    Row 3: [  2  1  1  2 ]
+UVM_INFO scoreboard.sv(650) @ 7122631702000: uvm_test_top.envh.scrh [SCB_SUMMARY] ====================================================
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 7122631702000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_server.svh(894) @ 7122631702000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  638
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SCB_CFG]     1
+[SCB_SUMMARY]    18
+[SEQ]     1
+[TEST_DONE]     1
+[TIMOUTSET]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+[driver]    61
+[game2048_inp_monitor]   123
+[game2048_out_monitor]   428
+
+$finish called from file "/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time        7122631701637
+"game2048_sva.sv", 28: tb_top.dut.u_sva.a_hs_p: started at 7122625881669ps not finished
+"game2048_sva.sv", 30: tb_top.dut.u_sva.a_vs_w: started at 7122631601637ps not finished
+"game2048_sva.sv", 32: tb_top.dut.u_sva.a_vs_p: started at 7122631601637ps not finished
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 7122631701637 ps
+CPU Time:   5786.780 seconds;       Data structure size:   0.6Mb
+Mon Nov 23 22:43:38 2026

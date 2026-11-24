@@ -27,9 +27,10 @@ class game2048_out_monitor extends uvm_monitor;
         forever begin
             @(vif.mon);
             req = seq_item::type_id::create("output_txn");
-            req.uo_out  = vif.mon.uo_out;
-            req.uio_out = vif.mon.uio_out;
-            req.uio_oe  = vif.mon.uio_oe;
+            req.uo_out=vif.mon.uo_out;
+            req.uio_out=vif.mon.uio_out;
+            req.uio_oe=vif.mon.uio_oe;
+            req.rst_n=vif.mon.rst_n;
 
             cur_vsync = req.uo_out[3];
             rgb_bits  = {req.uo_out[0], req.uo_out[1], req.uo_out[2],

@@ -1,0 +1,14 @@
+<Command name="schRTLInfo"  delimiter="."  >
+<RTLBlock >
+<RTLInfo   name="ps_0"  type="2"  fileName="debounce_top.v"  >
+    <Seg beginLine="21"  endLine="74"  />
+  </RTLInfo>
+<Instance name="tb_top.dut.db.deb"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="state_1"  type="2"  fileName="update.v"  >
+    <Seg beginLine="101"  endLine="402"  />
+  </RTLInfo>
+<Instance name="tb_top.dut.u_grid_core"  />
+</RTLBlock>
+</Command>

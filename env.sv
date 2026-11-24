@@ -6,7 +6,7 @@ class environment extends uvm_env;
 
 	scoreboard scrh;
 
-	//coverage input_cov;
+	game2048_subscriber input_cov;
 
 	function new(string name="environment",uvm_component parent);
 		super.new(name,parent);
@@ -18,7 +18,7 @@ class environment extends uvm_env;
 		uvm_config_db #(uvm_active_passive_enum)::set(this,"pa","is_active",UVM_PASSIVE);
 		aa=active_agent::type_id::create("aa",this);
 		pa=passive_agent::type_id::create("pa",this);
-		//input_cov=coverage::type_id::create("input_cov",this);
+		input_cov=game2048_subscriber::type_id::create("input_cov",this);
 		scrh = scoreboard::type_id::create("scrh", this);
 	endfunction
 
@@ -26,6 +26,6 @@ class environment extends uvm_env;
 		super.connect_phase(phase);
 		aa.ap.connect(scrh.fifo_in.analysis_export);
 		pa.ap.connect(scrh.fifo_op.analysis_export);
-		//aa.ap.connect(input_cov.analysis_export);
+		aa.ap.connect(input_cov.analysis_export);
 	endfunction
 endclass

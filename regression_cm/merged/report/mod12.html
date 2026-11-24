@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: vga_controller</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_vga_controller'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_vga_controller')">vga_controller</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 98.59</td>
+<td class="s10 cl rt"><a href="mod12.html#Line" >100.00</a></td>
+<td class="s9 cl rt"><a href="mod12.html#Cond" > 97.50</a></td>
+<td class="s9 cl rt"><a href="mod12.html#Toggle" > 99.20</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod12.html#Branch" > 97.67</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/fetools/work_area/frontend/Batch_11/vijay/TTO_2048/vga_controller.v')">/fetools/work_area/frontend/Batch_11/vijay/TTO_2048/vga_controller.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod12.html#inst_tag_13"  onclick="showContent('inst_tag_13')">tb_top.dut.vga_contr</a></td>
+<td class="s9 cl rt"> 98.59</td>
+<td class="s10 cl rt"><a href="mod12.html#Line" >100.00</a></td>
+<td class="s9 cl rt"><a href="mod12.html#Cond" > 97.50</a></td>
+<td class="s9 cl rt"><a href="mod12.html#Toggle" > 99.20</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod12.html#Branch" > 97.67</a></td>
+<td class="wht cl rt"></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_vga_controller'>
+<hr>
+<a name="inst_tag_13"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_13" >tb_top.dut.vga_contr</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 98.59</td>
+<td class="s10 cl rt"><a href="mod12.html#Line" >100.00</a></td>
+<td class="s9 cl rt"><a href="mod12.html#Cond" > 97.50</a></td>
+<td class="s9 cl rt"><a href="mod12.html#Toggle" > 99.20</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod12.html#Branch" > 97.67</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 98.59</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s9 cl rt"> 97.50</td>
+<td class="s9 cl rt"> 99.20</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 97.67</td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s8 cl rt"> 80.85</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 80.85</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod0.html#inst_tag_0" >dut</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_vga_controller'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod12.html" >vga_controller</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>32</td><td>32</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>266</td><td>13</td><td>13</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>285</td><td>14</td><td>14</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>306</td><td>5</td><td>5</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+265                     	always @(*) begin
+266        1/1          		case (value)
+267        1/1          		4'h1: glyph_pixel = TILE_2[bit_index];
+268        1/1          		4'h2: glyph_pixel = TILE_4[bit_index];
+269        1/1          		4'h3: glyph_pixel = TILE_8[bit_index];
+270        1/1          		4'h4: glyph_pixel = TILE_16[bit_index];
+271        1/1          		4'h5: glyph_pixel = TILE_32[bit_index];
+272        1/1          		4'h6: glyph_pixel = TILE_64[bit_index];
+273        1/1          		4'h7: glyph_pixel = TILE_128[bit_index];
+274        1/1          		4'h8: glyph_pixel = TILE_256[bit_index];
+275        1/1          		4'h9: glyph_pixel = TILE_512[bit_index];
+276        1/1          		4'hA: glyph_pixel = TILE_1024[bit_index];
+277        1/1          		4'hB: glyph_pixel = TILE_2048[bit_index];
+278        1/1          		default: glyph_pixel = 1'b0;
+279                     		endcase
+280                     	end
+281                     
+282                     	// Predefined background colours for each non-zero tile
+283                     	reg [5:0] bg_colour;
+284                     	always @(*) begin
+285        1/1          		case (value)
+286        1/1          		4'h0: bg_colour = center ? 6'b11_11_11 : 6'b01_01_01; // Empty
+287        1/1          		4'h1: bg_colour = 6'b11_01_01; // 2
+288        1/1          		4'h2: bg_colour = 6'b11_10_01; // 4
+289        1/1          		4'h3: bg_colour = 6'b11_11_01; // 8
+290        1/1          		4'h4: bg_colour = 6'b00_11_11; // 16
+291        1/1          		4'h5: bg_colour = 6'b00_10_11; // 32
+292        1/1          		4'h6: bg_colour = 6'b00_11_10; // 64
+293        1/1          		4'h7: bg_colour = 6'b00_11_01; // 128
+294        1/1          		4'h8: bg_colour = 6'b11_01_00; // 256
+295        1/1          		4'h9: bg_colour = 6'b11_01_10; // 512
+296        1/1          		4'hA: bg_colour = 6'b10_01_11; // 1024
+297        1/1          		4'hB: bg_colour = 6'b11_00_01; // 2048
+298        1/1          		default: bg_colour = center ? 6'b11_11_11 : 6'b01_01_01;
+299                     		endcase
+300                     	end
+301                     
+302                     	wire [5:0] tile_colour = (inside_text_box &amp;&amp; glyph_pixel) ? 6'b00_00_00 : bg_colour;	// black for text, else bg_colour
+303                     
+304                     	reg [5:0] rgb;
+305                     	always @(*) begin
+306        1/1          		if(video_active) begin
+307                     			// display the appropriate colors within the board
+308        2/2          			if(inside_board) rgb = tile_colour;
+309                     			// display green everywhere around the board if the game is won, red if lost, and black if neither has occurred.
+310        1/1          			else rgb = won ? 6'b00_10_01 : (lost ? 6'b11_00_00 : 6'b00_00_00);
+311                     		end else begin
+312        1/1          			rgb = 6'b00_00_00;
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod12.html" >vga_controller</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">Conditions</td><td>40</td><td>39</td><td>97.50</td></tr>
+<tr class="s9"><td class="lf">Logical</td><td>40</td><td>39</td><td>97.50</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       227
+ EXPRESSION ((pix_x &gt;= BOARD_X) &amp;&amp; (pix_x &lt; (BOARD_X + BOARD_SIZE)) &amp;&amp; (pix_y &gt;= BOARD_Y) &amp;&amp; (pix_y &lt; (BOARD_Y + BOARD_SIZE)))
+             ---------1--------    ----------------2---------------    ---------3--------    ----------------4---------------
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       240
+ EXPRESSION ((cell_x[5:1] == 5'd15) &amp;&amp; (cell_y[5:1] == 5'd15))
+             -----------1----------    -----------2----------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       244
+ EXPRESSION ((cell_y &gt;= 6'h10) &amp;&amp; (cell_y &lt; 6'h30))
+             --------1--------    --------2-------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       245
+ EXPRESSION (is_large ? 1'b1 : ((cell_x &gt;= 6'h10) &amp;&amp; (cell_x &lt; 6'h30)))
+             ----1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       245
+ SUB-EXPRESSION ((cell_x &gt;= 6'h10) &amp;&amp; (cell_x &lt; 6'h30))
+                 --------1--------    --------2-------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       247
+ EXPRESSION (in_y_range &amp;&amp; in_x_range)
+             -----1----    -----2----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       251
+ EXPRESSION ((cell_y[5:0] &gt;= 6'd16) ? ((cell_y[4:1] - 4'd8)) : 4'b0)
+             -----------1----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       253
+ EXPRESSION ((cell_x[5:0] &gt;= 6'd16) ? ((cell_x[4:1] - 4'd8)) : 4'b0)
+             -----------1----------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       260
+ EXPRESSION (is_large ? ((value == 4'd11) ? gx_large_off : gx_large_std) : gx_small)
+             ----1---
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       260
+ SUB-EXPRESSION ((value == 4'd11) ? gx_large_off : gx_large_std)
+                 --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       286
+ EXPRESSION (center ? 6'b111111 : 6'b010101)
+             ---1--
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       298
+ EXPRESSION (center ? 6'b111111 : 6'b010101)
+             ---1--
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       302
+ EXPRESSION ((inside_text_box &amp;&amp; glyph_pixel) ? 6'b0 : bg_colour)
+             ----------------1---------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       302
+ SUB-EXPRESSION (inside_text_box &amp;&amp; glyph_pixel)
+                 -------1-------    -----2-----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       310
+ EXPRESSION (won ? 6'b001001 : (lost ? 6'b110000 : 6'b0))
+             -1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       310
+ SUB-EXPRESSION (lost ? 6'b110000 : 6'b0)
+                 --1-
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod12.html" >vga_controller</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Totals</td>
+<td class="rt">33</td>
+<td class="rt">32</td>
+<td class="rt">96.97 </td>
+</tr><tr class="s9">
+<td>Total Bits</td>
+<td class="rt">250</td>
+<td class="rt">248</td>
+<td class="rt">99.20 </td>
+</tr><tr class="s9">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">125</td>
+<td class="rt">124</td>
+<td class="rt">99.20 </td>
+</tr><tr class="s9">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">125</td>
+<td class="rt">124</td>
+<td class="rt">99.20 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s10">
+<td>Ports</td>
+<td class="rt">11</td>
+<td class="rt">11</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Port Bits</td>
+<td class="rt">74</td>
+<td class="rt">74</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">37</td>
+<td class="rt">37</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">37</td>
+<td class="rt">37</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s9">
+<td>Signals</td>
+<td class="rt">22</td>
+<td class="rt">21</td>
+<td class="rt">95.45 </td>
+</tr><tr class="s9">
+<td>Signal Bits</td>
+<td class="rt">176</td>
+<td class="rt">174</td>
+<td class="rt">98.86 </td>
+</tr><tr class="s9">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">88</td>
+<td class="rt">87</td>
+<td class="rt">98.86 </td>
+</tr><tr class="s9">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">88</td>
+<td class="rt">87</td>
+<td class="rt">98.86 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>pix_x[9:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pix_y[9:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>video_active</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>won</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>lost</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>value[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>row[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>col[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>R[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>G[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>B[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>inside_board</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rel_x[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rel_y[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>cell_x[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>cell_y[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>center</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>is_large</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>in_y_range</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>in_x_range</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>inside_text_box</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>cell_x_plus2[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gy[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gx_small[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gx_large_std[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gx_large_off[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>_unused</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gx[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bit_index[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>glyph_pixel</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>bg_colour[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>tile_colour[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rgb[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod12.html" >vga_controller</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Branches</td>
+<td></td>
+<td class="rt">43</td>
+<td class="rt">42</td>
+<td class="rt">97.67 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">245</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">251</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">253</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">260</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">302</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>CASE</td>
+<td class="rt">266</td>
+<td class="rt">12</td>
+<td class="rt">12</td>
+<td class="rt">100.00</td>
+</tr><tr class="s9">
+<td>CASE</td>
+<td class="rt">285</td>
+<td class="rt">15</td>
+<td class="rt">14</td>
+<td class="rt">93.33 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">306</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+245          wire in_x_range = is_large ? 1'b1 : (cell_x >= 16 && cell_x < 48);
+                                        <font color = "green">-1-</font>  
+                                        <font color = "green">==></font>  
+                                        <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+251          wire [3:0] gy = cell_y[5:0] >= 6'd16 ? cell_y[4:1] - 4'd8 : 4'd0;	// y index of the glyph 
+                                                  <font color = "green">-1-</font>  
+                                                  <font color = "green">==></font>  
+                                                  <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+253          wire [3:0] gx_small     = cell_x[5:0] >= 6'd16 ? cell_x[4:1] - 4'd8 : 4'd0;	// x index of the small number glyphs
+                                                            <font color = "green">-1-</font>  
+                                                            <font color = "green">==></font>  
+                                                            <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+260          wire [3:0] gx = is_large ? ((value == 4'd11) ? gx_large_off : gx_large_std) : gx_small;
+                                      <font color = "green">-1-</font>                 <font color = "green">-2-</font>   
+                                                          <font color = "green">==></font>  
+                                      <font color = "green">==></font>                 <font color = "green">==></font>   
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+302        	wire [5:0] tile_colour = (inside_text_box && glyph_pixel) ? 6'b00_00_00 : bg_colour;	// black for text, else bg_colour
+           	                                                          <font color = "green">-1-</font>  
+           	                                                          <font color = "green">==></font>  
+           	                                                          <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+266        		case (value)
+           		<font color = "green">-1-</font>  
+267        		4'h1: glyph_pixel = TILE_2[bit_index];
+           <font color = "green">		==></font>
+268        		4'h2: glyph_pixel = TILE_4[bit_index];
+           <font color = "green">		==></font>
+269        		4'h3: glyph_pixel = TILE_8[bit_index];
+           <font color = "green">		==></font>
+270        		4'h4: glyph_pixel = TILE_16[bit_index];
+           <font color = "green">		==></font>
+271        		4'h5: glyph_pixel = TILE_32[bit_index];
+           <font color = "green">		==></font>
+272        		4'h6: glyph_pixel = TILE_64[bit_index];
+           <font color = "green">		==></font>
+273        		4'h7: glyph_pixel = TILE_128[bit_index];
+           <font color = "green">		==></font>
+274        		4'h8: glyph_pixel = TILE_256[bit_index];
+           <font color = "green">		==></font>
+275        		4'h9: glyph_pixel = TILE_512[bit_index];
+           <font color = "green">		==></font>
+276        		4'hA: glyph_pixel = TILE_1024[bit_index];
+           <font color = "green">		==></font>
+277        		4'hB: glyph_pixel = TILE_2048[bit_index];
+           <font color = "green">		==></font>
+278        		default: glyph_pixel = 1'b0;
+           <font color = "green">		==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>4'h1 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h2 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h3 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h4 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h5 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h6 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h7 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h8 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h9 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'ha </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'hb </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+285        		case (value)
+           		<font color = "green">-1-</font>  
+286        		4'h0: bg_colour = center ? 6'b11_11_11 : 6'b01_01_01; // Empty
+           		                         <font color = "green">-2-</font>  
+           		                         <font color = "green">==></font>  
+           		                         <font color = "green">==></font>  
+287        		4'h1: bg_colour = 6'b11_01_01; // 2
+           <font color = "green">		==></font>
+288        		4'h2: bg_colour = 6'b11_10_01; // 4
+           <font color = "green">		==></font>
+289        		4'h3: bg_colour = 6'b11_11_01; // 8
+           <font color = "green">		==></font>
+290        		4'h4: bg_colour = 6'b00_11_11; // 16
+           <font color = "green">		==></font>
+291        		4'h5: bg_colour = 6'b00_10_11; // 32
+           <font color = "green">		==></font>
+292        		4'h6: bg_colour = 6'b00_11_10; // 64
+           <font color = "green">		==></font>
+293        		4'h7: bg_colour = 6'b00_11_01; // 128
+           <font color = "green">		==></font>
+294        		4'h8: bg_colour = 6'b11_01_00; // 256
+           <font color = "green">		==></font>
+295        		4'h9: bg_colour = 6'b11_01_10; // 512
+           <font color = "green">		==></font>
+296        		4'hA: bg_colour = 6'b10_01_11; // 1024
+           <font color = "green">		==></font>
+297        		4'hB: bg_colour = 6'b11_00_01; // 2048
+           <font color = "green">		==></font>
+298        		default: bg_colour = center ? 6'b11_11_11 : 6'b01_01_01;
+           		                            <font color = "red">-3-</font>  
+           		                            <font color = "red">==></font>  
+           		                            <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>4'h0 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h0 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h1 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h2 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h3 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h4 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h5 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h6 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h7 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h8 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'h9 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'ha </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>4'hb </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+306        		if(video_active) begin
+           		<font color = "green">-1-</font>  
+307        			// display the appropriate colors within the board
+308        			if(inside_board) rgb = tile_colour;
+           			<font color = "green">-2-</font>  
+           <font color = "green">			==></font>
+309        			// display green everywhere around the board if the game is won, red if lost, and black if neither has occurred.
+310        			else rgb = won ? 6'b00_10_01 : (lost ? 6'b11_00_00 : 6'b00_00_00);
+           			               <font color = "green">-3-</font>                   <font color = "green">-4-</font>   
+           			               <font color = "green">==></font>                   <font color = "green">==></font>   
+           			                                     <font color = "green">==></font>  
+311        		end else begin
+312        			rgb = 6'b00_00_00;
+           <font color = "green">			==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_13">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_vga_controller">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

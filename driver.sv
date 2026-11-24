@@ -39,12 +39,10 @@ class driver extends uvm_driver #(seq_item);
         `uvm_info(get_type_name(), $sformatf("Driven transaction: ui_in=0x%0h, uio_in=0x%0h, ena=%0b",
                   req.ui_in, req.uio_in, req.ena), UVM_LOW)
 
-        // Hold for 3 VSYNC edges so the RTL 2-VSYNC debouncer latches the press
         repeat (3) @(negedge vif.drv.uo_out[3]);
         @(vif.drv);
         vif.drv.ui_in <= 8'h00;
 
-        // Release for 3 VSYNC edges so the RTL 2-VSYNC debouncer returns to S0
         repeat (3) @(negedge vif.drv.uo_out[3]);
     endtask
 endclass

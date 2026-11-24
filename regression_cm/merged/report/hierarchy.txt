@@ -1,0 +1,49 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT        
+ 90.50  93.75  98.62  89.33  66.67  94.62 100.00 tb_top 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT     
+   90.84  93.53  98.62  91.59  66.67  94.62 100.00 dut 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT    
+     85.73  88.75 100.00  98.12  57.14  84.62 --     db 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT        
+       79.17  85.71 --      97.37  57.14  76.47 --     deb    
+       99.02 100.00 --      97.06 --     100.00 --     ffs    
+       92.26  83.33 100.00 100.00 --      85.71 --     muxes  
+      100.00 100.00 --     100.00 --     100.00 --     pr_enc 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT             
+     99.54 100.00 100.00  98.15 --     100.00 --     hvsync_gen  
+     99.43 100.00 100.00  97.73 --     100.00 --     random      
+     86.67 100.00 --      60.00 --     100.00 --     rs1         
+     91.18  93.64  98.89  96.62  70.00  96.74 --     u_grid_core 
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT    
+      100.00 100.00 --     100.00 --     100.00 --     A1 
+      100.00 --     --     100.00 --     --     --     e1 
+      100.00 --     --     100.00 --     --     --     e2 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT           
+     92.05 100.00 --      68.18 --     100.00 100.00 u_sva     
+     98.59 100.00  97.50  99.20 --      97.67 --     vga_contr 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT     
+   61.63 --     --      61.63 --     --     --     vif 
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT                                    
+ 30.91  31.82 --     --     --      30.00 --     uvm_custom_install_recording       
+  8.25   5.20 --       0.00 --      19.57 --     uvm_custom_install_verdi_recording 
+

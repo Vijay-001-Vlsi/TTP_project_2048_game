@@ -1,0 +1,30 @@
+Design Module List
+
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT 
+ 76.15  47.90  98.62  88.25  66.67  77.69  77.78 
+
+
+Total modules in report: 19
+-------------------------------------------------------------------------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT NAME                               
+  8.25   5.20 --       0.00 --      19.57 --     uvm_custom_install_verdi_recording 
+ 30.91  31.82 --     --     --      30.00 --     uvm_custom_install_recording       
+ 33.33 --     --     --     --     --      33.33 uvm_pkg                            
+ 61.63 --     --      61.63 --     --     --     game_2048_inf                      
+ 79.17  85.71 --      97.37  57.14  76.47 --     debouncer                          
+ 80.85 --     --      80.85 --     --     --     tt_um_2048                         
+ 86.67 100.00 --      60.00 --     100.00 --     reset_sync                         
+ 87.50 100.00 --      75.00 --     --     --     tb_top                             
+ 90.43  87.50 --      98.08 --      85.71 --     debounce_top                       
+ 90.97  93.56  98.89  95.75  70.00  96.67 --     update                             
+ 92.05 100.00 --      68.18 --     100.00 100.00 game2048_sva_bb                    
+ 92.26  83.33 100.00 100.00 --      85.71 --     mux                                
+ 98.59 100.00  97.50  99.20 --      97.67 --     vga_controller                     
+ 99.02 100.00 --      97.06 --     100.00 --     d_ff                               
+ 99.43 100.00 100.00  97.73 --     100.00 --     randomizer                         
+ 99.54 100.00 100.00  98.15 --     100.00 --     hvsync_generator                   
+100.00 --     --     100.00 --     --     --     EQ                                 
+100.00 100.00 --     100.00 --     100.00 --     Adder                              
+100.00 100.00 --     100.00 --     100.00 --     priority_encoder                   
+

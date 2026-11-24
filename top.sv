@@ -1,8 +1,8 @@
-
 `timescale 1ns/1ps
 
 `include "uvm_macros.svh"
 `include "defines.svh"
+`include "game2048_sva.sv"
 
 module tb_top;
 
@@ -31,9 +31,8 @@ module tb_top;
     .rst_n   (rst_n)
   );
 
+  bind tt_um_2048 game2048_sva_bb u_sva (.*);
   initial begin
-
-
     uvm_config_db#(virtual game_2048_inf.DRV)::set(
       null, "*", "vif", vif
     );
@@ -41,6 +40,7 @@ module tb_top;
     uvm_config_db#(virtual game_2048_inf.MON)::set(
       null, "*", "vif", vif
     );
+    uvm_config_db#(virtual game_2048_inf)::set(null, "*", "vif", vif);
 
     run_test("test");
   end
@@ -55,7 +55,5 @@ module tb_top;
     @(negedge clk);
     rst_n = 1'b1;
   end
-
-
 
 endmodule

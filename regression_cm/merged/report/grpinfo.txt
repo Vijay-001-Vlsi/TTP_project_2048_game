@@ -1,0 +1,448 @@
+Group : game_pkg::game2048_subscriber::game2048_cg
+
+===============================================================================
+Group : game_pkg::game2048_subscriber::game2048_cg
+===============================================================================
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING 
+100.00 100.00    1      100    1        1            64           64            
+
+
+Source File(s) : 
+
+/fetools/work_area/frontend/Batch_11/vijay/TTO_2048/coverage.sv
+
+1 Instances:
+
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING NAME                      
+100.00 1      100    1        64           64            tb_top.me.obj.game2048_cg 
+
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   game_pkg::game2048_subscriber::game2048_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 28       0         28      100.00  
+
+
+Variables for Group  game_pkg::game2048_subscriber::game2048_cg
+
+
+VARIABLE           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+up_toggle          2        0         2       100.00  100  1      1        0                    
+down_toggle        2        0         2       100.00  100  1      1        0                    
+left_toggle        2        0         2       100.00  100  1      1        0                    
+right_toggle       2        0         2       100.00  100  1      1        0                    
+srst_toggle        2        0         2       100.00  100  1      1        0                    
+ena_toggle         1        0         1       100.00  100  1      1        0                    
+uio_in_range       3        0         3       100.00  100  1      1        0                    
+button_combination 4        0         4       100.00  100  1      1        0                    
+button_pairs       10       0         10      100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable up_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for up_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+low  851032110 1        
+high 115920000 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable down_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for down_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+low  868672110 1        
+high 98280000  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable left_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for left_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+low  834652110 1        
+high 132300000 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable right_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for right_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+low  872452110 1        
+high 94500000  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable srst_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for srst_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+low  922852110 1        
+high 44100000  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable ena_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for ena_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+high 955612108 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable uio_in_range
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for uio_in_range
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+high 5880000   1        
+mid  2940000   1        
+low  958132110 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable button_combination
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for button_combination
+
+
+Bins
+
+NAME          COUNT     AT LEAST 
+all_five      1260000   1        
+four_buttons  7560000   1        
+three_buttons 12600000  1        
+none          561232110 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable button_pairs
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 10       0         10      100.00  
+
+
+User Defined Bins for button_pairs
+
+
+Bins
+
+NAME       COUNT   AT LEAST 
+right_srst 2520000 1        
+left_srst  1260000 1        
+left_right 5040000 1        
+down_srst  1260000 1        
+down_right 1260000 1        
+down_left  6300000 1        
+up_srst    2520000 1        
+up_right   1260000 1        
+up_left    1260000 1        
+up_down    3780000 1        
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Group Instance : tb_top.me.obj.game2048_cg
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Group:
+
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                       
+100.00 100.00    1      100    1        1            64           64                    game_pkg::game2048_subscriber::game2048_cg 
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group Instance   tb_top.me.obj.game2048_cg
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 28       0         28      100.00  
+
+
+Variables for Group Instance  tb_top.me.obj.game2048_cg
+
+
+VARIABLE           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+up_toggle          2        0         2       100.00  100  1      1        0                    
+down_toggle        2        0         2       100.00  100  1      1        0                    
+left_toggle        2        0         2       100.00  100  1      1        0                    
+right_toggle       2        0         2       100.00  100  1      1        0                    
+srst_toggle        2        0         2       100.00  100  1      1        0                    
+ena_toggle         1        0         1       100.00  100  1      1        0                    
+uio_in_range       3        0         3       100.00  100  1      1        0                    
+button_combination 4        0         4       100.00  100  1      1        0                    
+button_pairs       10       0         10      100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable up_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for up_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+low  851032110 1        
+high 115920000 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable down_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for down_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+low  868672110 1        
+high 98280000  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable left_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for left_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+low  834652110 1        
+high 132300000 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable right_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for right_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+low  872452110 1        
+high 94500000  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable srst_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for srst_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+low  922852110 1        
+high 44100000  1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable ena_toggle
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for ena_toggle
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+high 955612108 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable uio_in_range
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for uio_in_range
+
+
+Bins
+
+NAME COUNT     AT LEAST 
+high 5880000   1        
+mid  2940000   1        
+low  958132110 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable button_combination
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for button_combination
+
+
+Bins
+
+NAME          COUNT     AT LEAST 
+all_five      1260000   1        
+four_buttons  7560000   1        
+three_buttons 12600000  1        
+none          561232110 1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable button_pairs
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 10       0         10      100.00  
+
+
+User Defined Bins for button_pairs
+
+
+Bins
+
+NAME       COUNT   AT LEAST 
+right_srst 2520000 1        
+left_srst  1260000 1        
+left_right 5040000 1        
+down_srst  1260000 1        
+down_right 1260000 1        
+down_left  6300000 1        
+up_srst    2520000 1        
+up_right   1260000 1        
+up_left    1260000 1        
+up_down    3780000 1        
+
+

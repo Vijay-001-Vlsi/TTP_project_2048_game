@@ -1,0 +1,252 @@
+global coverage_group 0 game_pkg::game2048_subscriber::game2048_cg __coverage_game2048_subscriber.game2048_cg unused_game2048_subscriber_game2048_cg_loop_label game_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 63 /fetools/work_area/frontend/Batch_11/vijay/TTO_2048/coverage.sv
+ 6 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_2a
+0
+0
+0
+64
+0
+ 0
+
+9
+0
+0
+0
+ 9 up_toggle 14 0 0 0 0 0 117 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn 117 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 high 15 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 low 16 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 11 down_toggle 18 0 0 0 0 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_2 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 high 19 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 low 20 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 11 left_toggle 22 0 0 0 0 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_3 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 high 23 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 low 24 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 12 right_toggle 26 0 0 0 0 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_4 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 high 27 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 low 28 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 11 srst_toggle 30 0 0 0 0 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_5 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_5 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 high 31 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 low 32 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 10 ena_toggle 35 0 0 0 0 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_6 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_6 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 0 0 1 1 4 high 36 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_0 0 0 0 0 0 0 0
+ 0
+
+ 12 uio_in_range 39 0 0 0 0 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_7 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_7 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 8 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 3 low 40 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_8 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_9 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 mid 41 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_a 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_b 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 high 42 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_c 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_d 0 0 0 0 0
+ 0
+
+ 18 button_combination 45 0 0 0 0 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_e 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_e 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 5 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 none 46 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_f 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 13 three_buttons 48 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 10 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_10 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_11 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_12 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_13 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_14 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_15 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_16 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_17 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_18 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_19 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 12 four_buttons 49 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 5 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1a 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1b 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1c 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1d 0 0 0 0 0 0 0
+ 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1e 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 all_five 50 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_1f 0 0 0 0 0 0 0
+ 0
+
+ 12 button_pairs 53 0 0 0 0 0 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_e 119 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_e 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 5 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 10 1 1 0 0 1 1 7 up_down 54 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_20 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 up_left 55 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_21 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 up_right 56 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_22 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 up_srst 57 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_23 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 down_left 58 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_24 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 down_right 59 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_25 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 down_srst 60 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_26 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 left_right 61 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_27 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 left_srst 62 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_28 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 right_srst 63 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 120 game_pkg_game2048_subscriber_11_0::game_pkg_game2048_subscriber_11_0_game_pkg_game2048_subscriber_11_0_game2048_cg_fn_29 0 0 0 0 0 0 0
+ 0
+
+end_coverage_group

@@ -1,0 +1,35 @@
+Dashboard
+
+Date: Tue Nov 24 04:34:11 2026
+
+User: vijaymurthy
+
+Version: Q-2020.03-SP2-8
+Command line: urg -dir simv.vdb regression_cm/runs/game_no_srst_gameover_test_run1/simv.vdb regression_cm/runs/game_smoke_test_run1/simv.vdb regression_cm/runs/game_all_32_prio_test_run1/simv.vdb regression_cm/runs/game_glitch_and_overlap_test_run1/simv.vdb regression_cm/runs/game_merge_rules_test_run1/simv.vdb regression_cm/runs/game_invalid_and_reset_test_run1/simv.vdb regression_cm/runs/game_occupied_retry_test_run1/simv.vdb regression_cm/runs/game_unused_pins_test_run1/simv.vdb regression_cm/runs/game_over_test_run1/simv.vdb regression_cm/runs/game_random_test_run1/simv.vdb regression_cm/runs/game_win_glyph_test_run1/simv.vdb -metric line+cond+fsm+tgl+branch+assert+group -format both -dbname regression_cm/merged/simv -report regression_cm/merged/report
+Number of tests: 11
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT GROUP  
+ 82.76  47.90  98.62  88.43  66.67  77.69 100.00 100.00 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT NAME                               
+ 90.50  93.75  98.62  89.33  66.67  94.62 100.00 tb_top                             
+ 30.91  31.82 --     --     --      30.00 --     uvm_custom_install_recording       
+  8.25   5.20 --       0.00 --      19.57 --     uvm_custom_install_verdi_recording 
+
+
+-------------------------------------------------------------------------------
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT 
+ 76.15  47.90  98.62  88.25  66.67  77.69  77.78 
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  INST SCORE WEIGHT 
+100.00 100.00     1      
+

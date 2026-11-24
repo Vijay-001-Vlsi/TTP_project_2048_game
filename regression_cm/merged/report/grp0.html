@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Group :: game_pkg::game2048_subscriber::game2048_cg</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Group : game_pkg::game2048_subscriber::game2048_cg</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<div class="ui-layout-west">
+<div>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Group : <a href="#"  onclick="showContent('game_pkg::game2048_subscriber::game2048_cg')">game_pkg::game2048_subscriber::game2048_cg</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td><b>SCORE</b></td><td>INSTANCES</td><td>WEIGHT</td><td>GOAL</td><td>AT LEAST</td><td>PER INSTANCE</td><td>AUTO BIN MAX</td><td>PRINT MISSING</td></tr><tr>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">100   </td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">64    </td>
+<td class="wht cl rt">64    </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/fetools/work_area/frontend/Batch_11/vijay/TTO_2048/coverage.sv')">/fetools/work_area/frontend/Batch_11/vijay/TTO_2048/coverage.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>1 Instances:</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td><b>SCORE</b></td><td>WEIGHT</td><td>GOAL</td><td>AT LEAST</td><td>AUTO BIN MAX</td><td>PRINT MISSING</td></tr><tr>
+<td class="wht cl wordwrap"><a href="grp0.html#inst_tag_tb_top.me.obj.game2048_cg"  onclick="showContent('tb_top.me.obj.game2048_cg')">tb_top.me.obj.game2048_cg</a></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">100   </td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">64    </td>
+<td class="wht cl rt">64    </td>
+</tr></table><br clear=all>
+<br clear=all>
+</div>
+<hr>
+<br clear=all>
+<span class=repname>Summary for Group   game_pkg::game2048_subscriber::game2048_cg
+</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td><a href="#var_tbl_game_pkg::game2048_subscriber::game2048_cg" >Variables</a></td>
+<td class="rt">28</td>
+<td class="rt">0</td>
+<td class="rt">28</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class="repname" id="var_tbl_game_pkg::game2048_subscriber::game2048_cg">Variables for Group  game_pkg::game2048_subscriber::game2048_cg
+</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">VARIABLE</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td><td>GOAL</td><td>WEIGHT</td><td>AT LEAST</td><td>AUTO BIN MAX</td><td>COMMENT</td></tr><tr class="s10">
+<td><a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.up_toggle"  onclick="checkLink(this)" target="detailFrame">up_toggle</a></td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.down_toggle"  onclick="checkLink(this)" target="detailFrame">down_toggle</a></td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.left_toggle"  onclick="checkLink(this)" target="detailFrame">left_toggle</a></td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.right_toggle"  onclick="checkLink(this)" target="detailFrame">right_toggle</a></td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.srst_toggle"  onclick="checkLink(this)" target="detailFrame">srst_toggle</a></td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.ena_toggle"  onclick="checkLink(this)" target="detailFrame">ena_toggle</a></td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.uio_in_range"  onclick="checkLink(this)" target="detailFrame">uio_in_range</a></td>
+<td class="rt">3</td>
+<td class="rt">0</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.button_combination"  onclick="checkLink(this)" target="detailFrame">button_combination</a></td>
+<td class="rt">4</td>
+<td class="rt">0</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.button_pairs"  onclick="checkLink(this)" target="detailFrame">button_pairs</a></td>
+<td class="rt">10</td>
+<td class="rt">0</td>
+<td class="rt">10</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr></table><br clear=all>
+</div>
+<div name='tb_top.me.obj.game2048_cg'>
+<a name="inst_tag_tb_top.me.obj.game2048_cg"></a>
+<hr>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Group Instance : <a href="groups.html#tag_tb_top.me.obj.game2048_cg" >tb_top.me.obj.game2048_cg</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td><b>SCORE</b></td><td>WEIGHT</td><td>GOAL</td><td>AT LEAST</td><td>AUTO BIN MAX</td><td>PRINT MISSING</td></tr><tr>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">100   </td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">64    </td>
+<td class="wht cl rt">64    </td>
+</tr></table><br clear=all>
+<br clear=all>
+</div>
+<hr>
+<br clear=all>
+<span class=repname>Summary for Group Instance   tb_top.me.obj.game2048_cg
+</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td><a href="#var_tbl_tb_top.me.obj.game2048_cg" >Variables</a></td>
+<td class="rt">28</td>
+<td class="rt">0</td>
+<td class="rt">28</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class="repname" id="var_tbl_tb_top.me.obj.game2048_cg">Variables for Group Instance  tb_top.me.obj.game2048_cg
+</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">VARIABLE</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td><td>GOAL</td><td>WEIGHT</td><td>AT LEAST</td><td>AUTO BIN MAX</td><td>COMMENT</td></tr><tr class="s10">
+<td><a href="#inst_tag_tb_top.me.obj.game2048_cg.up_toggle"  onclick="checkLink(this)" target="detailFrame">up_toggle</a></td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_tb_top.me.obj.game2048_cg.down_toggle"  onclick="checkLink(this)" target="detailFrame">down_toggle</a></td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_tb_top.me.obj.game2048_cg.left_toggle"  onclick="checkLink(this)" target="detailFrame">left_toggle</a></td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_tb_top.me.obj.game2048_cg.right_toggle"  onclick="checkLink(this)" target="detailFrame">right_toggle</a></td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_tb_top.me.obj.game2048_cg.srst_toggle"  onclick="checkLink(this)" target="detailFrame">srst_toggle</a></td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_tb_top.me.obj.game2048_cg.ena_toggle"  onclick="checkLink(this)" target="detailFrame">ena_toggle</a></td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_tb_top.me.obj.game2048_cg.uio_in_range"  onclick="checkLink(this)" target="detailFrame">uio_in_range</a></td>
+<td class="rt">3</td>
+<td class="rt">0</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_tb_top.me.obj.game2048_cg.button_combination"  onclick="checkLink(this)" target="detailFrame">button_combination</a></td>
+<td class="rt">4</td>
+<td class="rt">0</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s10">
+<td><a href="#inst_tag_tb_top.me.obj.game2048_cg.button_pairs"  onclick="checkLink(this)" target="detailFrame">button_pairs</a></td>
+<td class="rt">10</td>
+<td class="rt">0</td>
+<td class="rt">10</td>
+<td class="rt">100.00</td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='game_pkg::game2048_subscriber::game2048_cg'>
+<br clear=all>
+<a name="inst_tag_game_pkg::game2048_subscriber::game2048_cg.up_toggle"></a><span class="repname" id="inst_tag_game_pkg::game2048_subscriber::game2048_cg.up_toggle">Summary for Variable up_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for up_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>low</td>
+<td class="rt">851032110</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>high</td>
+<td class="rt">115920000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_game_pkg::game2048_subscriber::game2048_cg.down_toggle"></a><span class="repname" id="inst_tag_game_pkg::game2048_subscriber::game2048_cg.down_toggle">Summary for Variable down_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for down_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>low</td>
+<td class="rt">868672110</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>high</td>
+<td class="rt">98280000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_game_pkg::game2048_subscriber::game2048_cg.left_toggle"></a><span class="repname" id="inst_tag_game_pkg::game2048_subscriber::game2048_cg.left_toggle">Summary for Variable left_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for left_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>low</td>
+<td class="rt">834652110</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>high</td>
+<td class="rt">132300000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_game_pkg::game2048_subscriber::game2048_cg.right_toggle"></a><span class="repname" id="inst_tag_game_pkg::game2048_subscriber::game2048_cg.right_toggle">Summary for Variable right_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for right_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>low</td>
+<td class="rt">872452110</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>high</td>
+<td class="rt">94500000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_game_pkg::game2048_subscriber::game2048_cg.srst_toggle"></a><span class="repname" id="inst_tag_game_pkg::game2048_subscriber::game2048_cg.srst_toggle">Summary for Variable srst_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for srst_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>low</td>
+<td class="rt">922852110</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>high</td>
+<td class="rt">44100000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_game_pkg::game2048_subscriber::game2048_cg.ena_toggle"></a><span class="repname" id="inst_tag_game_pkg::game2048_subscriber::game2048_cg.ena_toggle">Summary for Variable ena_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for ena_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>high</td>
+<td class="rt">955612108</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_game_pkg::game2048_subscriber::game2048_cg.uio_in_range"></a><span class="repname" id="inst_tag_game_pkg::game2048_subscriber::game2048_cg.uio_in_range">Summary for Variable uio_in_range</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">3</td>
+<td class="rt">0</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for uio_in_range</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>high</td>
+<td class="rt">5880000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>mid</td>
+<td class="rt">2940000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>low</td>
+<td class="rt">958132110</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_game_pkg::game2048_subscriber::game2048_cg.button_combination"></a><span class="repname" id="inst_tag_game_pkg::game2048_subscriber::game2048_cg.button_combination">Summary for Variable button_combination</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">4</td>
+<td class="rt">0</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for button_combination</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>all_five</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>four_buttons</td>
+<td class="rt">7560000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>three_buttons</td>
+<td class="rt">12600000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>none</td>
+<td class="rt">561232110</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_game_pkg::game2048_subscriber::game2048_cg.button_pairs"></a><span class="repname" id="inst_tag_game_pkg::game2048_subscriber::game2048_cg.button_pairs">Summary for Variable button_pairs</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">10</td>
+<td class="rt">0</td>
+<td class="rt">10</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for button_pairs</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>right_srst</td>
+<td class="rt">2520000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>left_srst</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>left_right</td>
+<td class="rt">5040000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>down_srst</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>down_right</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>down_left</td>
+<td class="rt">6300000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>up_srst</td>
+<td class="rt">2520000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>up_right</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>up_left</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>up_down</td>
+<td class="rt">3780000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+</div>
+<div name='tb_top.me.obj.game2048_cg'>
+<br clear=all>
+<a name="inst_tag_tb_top.me.obj.game2048_cg.up_toggle"></a><span class="repname" id="inst_tag_tb_top.me.obj.game2048_cg.up_toggle">Summary for Variable up_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for up_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>low</td>
+<td class="rt">851032110</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>high</td>
+<td class="rt">115920000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_tb_top.me.obj.game2048_cg.down_toggle"></a><span class="repname" id="inst_tag_tb_top.me.obj.game2048_cg.down_toggle">Summary for Variable down_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for down_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>low</td>
+<td class="rt">868672110</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>high</td>
+<td class="rt">98280000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_tb_top.me.obj.game2048_cg.left_toggle"></a><span class="repname" id="inst_tag_tb_top.me.obj.game2048_cg.left_toggle">Summary for Variable left_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for left_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>low</td>
+<td class="rt">834652110</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>high</td>
+<td class="rt">132300000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_tb_top.me.obj.game2048_cg.right_toggle"></a><span class="repname" id="inst_tag_tb_top.me.obj.game2048_cg.right_toggle">Summary for Variable right_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for right_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>low</td>
+<td class="rt">872452110</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>high</td>
+<td class="rt">94500000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_tb_top.me.obj.game2048_cg.srst_toggle"></a><span class="repname" id="inst_tag_tb_top.me.obj.game2048_cg.srst_toggle">Summary for Variable srst_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for srst_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>low</td>
+<td class="rt">922852110</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>high</td>
+<td class="rt">44100000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_tb_top.me.obj.game2048_cg.ena_toggle"></a><span class="repname" id="inst_tag_tb_top.me.obj.game2048_cg.ena_toggle">Summary for Variable ena_toggle</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for ena_toggle</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>high</td>
+<td class="rt">955612108</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_tb_top.me.obj.game2048_cg.uio_in_range"></a><span class="repname" id="inst_tag_tb_top.me.obj.game2048_cg.uio_in_range">Summary for Variable uio_in_range</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">3</td>
+<td class="rt">0</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for uio_in_range</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>high</td>
+<td class="rt">5880000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>mid</td>
+<td class="rt">2940000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>low</td>
+<td class="rt">958132110</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_tb_top.me.obj.game2048_cg.button_combination"></a><span class="repname" id="inst_tag_tb_top.me.obj.game2048_cg.button_combination">Summary for Variable button_combination</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">4</td>
+<td class="rt">0</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for button_combination</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>all_five</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>four_buttons</td>
+<td class="rt">7560000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>three_buttons</td>
+<td class="rt">12600000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>none</td>
+<td class="rt">561232110</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_tb_top.me.obj.game2048_cg.button_pairs"></a><span class="repname" id="inst_tag_tb_top.me.obj.game2048_cg.button_pairs">Summary for Variable button_pairs</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s10">
+<td>User Defined Bins</td>
+<td class="rt">10</td>
+<td class="rt">0</td>
+<td class="rt">10</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for button_pairs</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Bins</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td></tr><tr class="s10">
+<td>right_srst</td>
+<td class="rt">2520000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>left_srst</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>left_right</td>
+<td class="rt">5040000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>down_srst</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>down_right</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>down_left</td>
+<td class="rt">6300000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>up_srst</td>
+<td class="rt">2520000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>up_right</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>up_left</td>
+<td class="rt">1260000</td>
+<td class="rt">1</td>
+</tr><tr class="s10">
+<td>up_down</td>
+<td class="rt">3780000</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="game_pkg::game2048_subscriber::game2048_cg">
+    <li>
+      <a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.up_toggle">Variable : up_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.down_toggle">Variable : down_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.left_toggle">Variable : left_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.right_toggle">Variable : right_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.srst_toggle">Variable : srst_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.ena_toggle">Variable : ena_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.uio_in_range">Variable : uio_in_range</a>    </li>
+    <li>
+      <a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.button_combination">Variable : button_combination</a>    </li>
+    <li>
+      <a href="#inst_tag_game_pkg::game2048_subscriber::game2048_cg.button_pairs">Variable : button_pairs</a>    </li>
+  </ul>
+  <ul name="tb_top.me.obj.game2048_cg">
+    <li>
+      <a href="#inst_tag_tb_top.me.obj.game2048_cg.up_toggle">Variable : up_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_tb_top.me.obj.game2048_cg.down_toggle">Variable : down_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_tb_top.me.obj.game2048_cg.left_toggle">Variable : left_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_tb_top.me.obj.game2048_cg.right_toggle">Variable : right_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_tb_top.me.obj.game2048_cg.srst_toggle">Variable : srst_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_tb_top.me.obj.game2048_cg.ena_toggle">Variable : ena_toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_tb_top.me.obj.game2048_cg.uio_in_range">Variable : uio_in_range</a>    </li>
+    <li>
+      <a href="#inst_tag_tb_top.me.obj.game2048_cg.button_combination">Variable : button_combination</a>    </li>
+    <li>
+      <a href="#inst_tag_tb_top.me.obj.game2048_cg.button_pairs">Variable : button_pairs</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+  game_no_srst_gameover_test run 1: CLEAN
+  game_smoke_test run 1: CLEAN
+  game_all_32_prio_test run 1: CLEAN
+  game_glitch_and_overlap_test run 1: CLEAN
+  game_merge_rules_test run 1: CLEAN
+  game_invalid_and_reset_test run 1: CLEAN
+  game_occupied_retry_test run 1: CLEAN
+  game_unused_pins_test run 1: CLEAN
+  game_over_test run 1: CLEAN
+  game_random_test run 1: CLEAN
+  game_win_glyph_test run 1: CLEAN

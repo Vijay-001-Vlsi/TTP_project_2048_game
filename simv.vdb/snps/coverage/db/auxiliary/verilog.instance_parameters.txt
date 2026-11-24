@@ -1,0 +1,12 @@
+tb_top.dut.db.deb.S00
+tb_top.dut.db.deb.S11
+tb_top.dut.db.deb.S22
+tb_top.dut.db.deb.S33
+tb_top.dut.u_grid_core.FINDCOMPANION2
+tb_top.dut.u_grid_core.FINDZ1
+tb_top.dut.u_grid_core.GATECHECK5
+tb_top.dut.u_grid_core.LATCH_ST0
+tb_top.dut.u_grid_core.RANDINS6
+tb_top.dut.u_grid_core.UPDATENOW3
+tb_top.dut.u_grid_core.UPDATETRAV4
+tb_top.dut.u_grid_core.WAITFORDOWN7

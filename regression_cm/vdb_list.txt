@@ -1,0 +1,11 @@
+regression_cm/runs/game_no_srst_gameover_test_run1/simv.vdb
+regression_cm/runs/game_smoke_test_run1/simv.vdb
+regression_cm/runs/game_all_32_prio_test_run1/simv.vdb
+regression_cm/runs/game_glitch_and_overlap_test_run1/simv.vdb
+regression_cm/runs/game_merge_rules_test_run1/simv.vdb
+regression_cm/runs/game_invalid_and_reset_test_run1/simv.vdb
+regression_cm/runs/game_occupied_retry_test_run1/simv.vdb
+regression_cm/runs/game_unused_pins_test_run1/simv.vdb
+regression_cm/runs/game_over_test_run1/simv.vdb
+regression_cm/runs/game_random_test_run1/simv.vdb
+regression_cm/runs/game_win_glyph_test_run1/simv.vdb

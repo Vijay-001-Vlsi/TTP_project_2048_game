@@ -5,7 +5,7 @@ module debouncer (
     input wire rst_n,
     input wire btn,
     input wire vsync,
-    input wire [2:0] enc_sel, // Select lines coming from 8:3 encoder
+    input wire [2:0] enc_sel, // Select lines coming from priority encoder
     output reg y,
     output reg [2:0] sel_lines
 );
@@ -38,32 +38,41 @@ module debouncer (
         y = 1'b0;
         // count keeps its value between ticks, it only changes on a tick or a bounce
         count_next = count;
+        
         case(ps)
             S0: begin
                 if(btn) ns = S1;
             end
             
             S1: begin
-                if(btn == 1) begin
-                    if(tick) begin
-                        if(count) begin
-                            ns = S2;
-                            count_next = 1'b0;
-                        end
-                        else begin
-                            count_next = 1'b1;
-                        end
-                    end
-                end
-                else begin
+                if (sel_lines != enc_sel) begin //selection line change
                     ns = S0;
                     count_next = 1'b0;
+            end
+            else begin
+                    if(btn == 1) begin
+                        if(tick) begin
+                            if(count) begin //2nd tick
+                                ns = S2;
+                                count_next = 1'b0;
+                            end
+                            else begin //1st tick
+                                ns = S1;
+                                count_next = 1'b1;
+                            end
+                        end
+                    end
+                    else begin //button became zero in middle
+                        ns = S0;
+                        count_next = 1'b0;
+                    end
                 end
             end
             
             S2: begin
                 y = 1'b1;
                 if(btn == 0) ns = S3;
+                else ns = S2;
             end
             
             S3: begin
@@ -76,6 +85,7 @@ module debouncer (
                         end
                         else begin
                             count_next = 1'b1;
+                            ns = S3;
                         end
                     end
                 end
@@ -85,34 +95,19 @@ module debouncer (
                 end
             end
         endcase
-        if(ps == S1) begin
-            if (sel_lines != enc_sel) begin
-                ns = S0;
-                count_next = 1'b0;
-            end
-        end
     end
 endmodule
 
 module priority_encoder(
     // s_rst > right > left > down > up
-    input wire [7:0]i,
+    input wire [4:0]i,
     output reg [2:0]y
 );
 
     always @(*) begin
-        // s_rst for i[7]
-        if (i[7]) begin
+        // s_rst for i[4]
+        if (i[4]) begin
             y = 3'd0;
-        end
-        else if (i[6]) begin
-            y = 3'd1;
-        end
-        else if (i[5]) begin
-            y = 3'd2;
-        end
-        else if (i[4]) begin
-            y = 3'd3;
         end
         // right
         else if (i[3]) begin
@@ -200,7 +195,7 @@ module debounce_top(
     );
     
     priority_encoder pr_enc(
-        .i({sync_out[4],3'd0,sync_out[3:0]}),
+        .i(sync_out),
         .y(pr_enc_out)
     );
     
@@ -223,20 +218,22 @@ module debounce_top(
 
     // Demux
     always @(*) begin
-        s_rst = 1'b0;
-        y = 4'd0;
         if(debounced_out) begin
             case(sel_lines)
-                3'd0: s_rst = 1'b1;
-                3'd4: y = 4'b0001; // right
-                3'd5: y = 4'b0010; // left
-                3'd6: y = 4'b0100; // down
-                3'd7: y = 4'b1000; // up
+                3'd0:begin s_rst = 1'b1; y = 4'b0000; end
+                3'd4:begin s_rst = 1'b0; y = 4'b0001; end // right
+                3'd5:begin s_rst = 1'b0; y = 4'b0010; end // left
+                3'd6:begin s_rst = 1'b0; y = 4'b0100; end // down
+                3'd7:begin s_rst = 1'b0; y = 4'b1000; end // up
                 default: begin
                     s_rst = 1'b0;
                     y = 4'd0;
                 end
             endcase
+        end
+        else begin
+            s_rst = 1'b0;
+            y = 4'd0;
         end
     end
 endmodule

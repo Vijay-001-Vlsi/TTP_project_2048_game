@@ -15,7 +15,7 @@ package game_pkg;
   `include "active_agent.sv"
   `include "passive_agent.sv"
   `include "scoreboard.sv"
-  // `include "coverage.sv"
+  `include "coverage.sv"
   `include "env.sv"
   `include "test.sv"
 
